@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "pixel_logo";
+    src: url(Fonts/rainyhearts-webfont.woff2) format("woff2"), 
+    url(Fonts/rainyhearts-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+p{
+    padding-bottom: 10px;
+}
+.info-about{
+    margin-top: 50px;
+    font-size: 2em;
+}
+.sign-up{
+    color: aqua;
+    font-size: 1em;
+}
+.side-bar{
+    width:auto;
+    height: 100vh;
+    filter: brightness(30%)
+}
+.page-content{
+    display: flex;
+    gap: 50px;
+}
+
+.pic-logo{
+    position: relative;
+    text-align: center;
+    display: flex;
+}
