@@ -20,6 +20,7 @@ button {
   box-sizing: border-box;
   font-family: inherit;
   font-size: 100%;
+  appearance: none;
 }
 @font-face{
     font-family: "pixel_logo";
@@ -41,7 +42,6 @@ button {
     background-repeat: no-repeat;
     width: 45vw;
     height: 100vh;
-
 }
 .logo-picture{
    position: relative;
@@ -52,12 +52,11 @@ button {
    display: flex;
    align-items: center;
    justify-content: center;
-
 }
 .codeforge{
     font: 4em "pixel_logo";
     color: var(--color);
-    background-color: var(--strip-color);
+    background-color: transparent;
 }
 .right-side{
     margin-top: 50px;
@@ -66,62 +65,56 @@ button {
 }
 
 .info-about{
-    padding-left: 20px;
+    padding-left: 40px;
     margin-top: 100px;
     font-size: 2.5em;
     padding-bottom: 10px;
 }
 .sign-up{
-    padding-left: 20px;
+    padding-left: 40px;
     color:var(--color);
     font-weight: bold;
     font-size: 1.25em;
 }
 
-form{
-    margin-top: 60px;
-    display: flex;
-    padding: 40px 0px 40px 40px;
-    gap:60px;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 40%;
-    box-shadow: 2px 1px 2.5px var(--color);
-    background-image:linear-gradient(45deg,
-    rgb(5, 5, 5), #131212);;
-}
+
 ul{
     list-style: none;
     padding: 0;
+    background-color: transparent;
 
 }
 label{
-    display: block;
     color: var(--color);
-    
+    background-color: transparent;
+
 }
-label:after{content: ": "}
 
 form li + li{
-    margin-top: 1em;
+    margin-top: 1.5em;   
 }
-
+div {
+    background-color: transparent;
+}
 input{
     appearance: none;
-    width: 100%;
+    min-width: 300px;
+    display: block;
     background-color: rgb(19, 19, 19);
-    padding: 4px;
-    border-color: grey;
+    padding: 10px;
+    border: 2px solid grey;
     border-radius: 0.25em;
 }
-
+li{
+    background-color: transparent;
+}
 button{
     background-color: rgb(66, 66, 66);
     color: white;
     border:none; 
     border-radius:10px; 
     padding:15px;
-    margin: 30px;
+    margin: 40px;
     min-height:30px; 
     min-width: 120px;
   }
@@ -131,4 +124,22 @@ button:hover{
    color: black;
     transform: scale(1.05);
     transition: 0.5s;
+}
+.input-fields{
+    margin-top: 40px;
+    display: flex;
+    padding-left: 40px;
+    gap: 60px;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 1px 2.5px var(--color);
+    background-image:linear-gradient(45deg,
+    rgb(5, 5, 5), #131212);;
+    align-items: center;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
 }

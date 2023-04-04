@@ -21,42 +21,46 @@
             <p class="info-about">CodeForge is a free daily newsletter with easily digestible articles for web developers.</p>
             <p class="sign-up">Sign up now!</p>
             <form>
-                <div>
-                    <ul>
-                        <li>
-                            <label for="user_name">First name</label>
-                            <input type="text" name="name" id="user_name" placeholder="Jane">
-                        </li>
-    
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="email" name="user_email" id="email" placeholder="jane.doe@gmail.com">
-                        </li>
-    
-                        <li>
-                            <label for="password">Password</label>
-                            <input type="password" name="user_password" id="password">
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <label for="user_last_name">Last name</label>
-                            <input type="text" name="last_name" id="user_last_name" placeholder="Doe">
-                        </li>
-                        <li>
-                            <label for="user_phone">Phone number</label>
-                            <input type="tel" name="user_phone" id="user_phone">
-                        </li>
-                        <li>
-                            <label for="password_confirm">Confirm password</label>
-                            <input type="password" name="user_password_confirmation" id="password_confirm">
-                        </li>
-                    </ul>
-                </div>  
+                <div class="input-fields">
+                    <div>
+                        <ul>
+                            <li>
+                                <label for="user_name">First name</label>
+                                <input type="text" name="name" id="user_name" placeholder="Jane" required>
+                            </li>
+        
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" name="user_email" id="email" placeholder="jane.doe@gmail.com" required>
+                            </li>
+        
+                            <li>
+                                <label for="password">Password</label>
+                                <input type="password" name="user_password" id="password" required>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <label for="user_last_name">Last name</label>
+                                <input type="text" name="last_name" id="user_last_name" placeholder="Doe" required>
+                            </li>
+                            <li>
+                                <label for="user_phone">Phone number</label>
+                                <input type="tel" name="user_phone" id="user_phone" required>
+                            </li>
+                            <li>
+                                <label for="password_confirm">Confirm password</label>
+                                <input type="password" name="user_password_confirmation" id="password_confirm" required>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+                <button type="submit">Submit</button>
             </form>
-            <button type="submit">Submit</button>
+
+            
 
         </div>
     </div>
