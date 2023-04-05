@@ -77,22 +77,12 @@ button {
     font-size: 1.25em;
 }
 
-
-ul{
-    list-style: none;
-    padding: 0;
-    background-color: transparent;
-
-}
 label{
     color: var(--color);
     background-color: transparent;
 
 }
 
-form li + li{
-    margin-top: 1.5em;   
-}
 div {
     background-color: transparent;
 }
@@ -105,9 +95,7 @@ input{
     border: 2px solid grey;
     border-radius: 0.25em;
 }
-li{
-    background-color: transparent;
-}
+
 button{
     background-color: rgb(66, 66, 66);
     color: white;
@@ -139,7 +127,21 @@ button:hover{
     align-items: center;
 }
 
-input:focus{
-    outline: none;
-    border: 2px solid var(--color);
+.input-control{
+    margin-bottom: 20px;   
+}
+.input-control input:focus{
+    outline: 0;
+}
+
+.success{
+    border-color: rgb(119, 202, 119);
+}
+.fail{
+    border-color: rgb(245, 117, 117);
+}
+.error-msg{
+    color: rgb(245, 117, 117);
+    font-size: 9px;
+    height:13px;
 }
