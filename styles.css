@@ -130,8 +130,9 @@ button:hover{
 .input-control{
     margin-bottom: 20px;   
 }
-.input-control input:focus{
+input:focus{
     outline: 0;
+    border-color: var(--color);
 }
 
 .success{
@@ -142,6 +143,7 @@ button:hover{
 }
 .error-msg{
     color: rgb(245, 117, 117);
-    font-size: 9px;
-    height:13px;
+    font-size: 0.9em;
+    padding-top: 8px;
+
 }
