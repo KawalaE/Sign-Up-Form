@@ -2,11 +2,27 @@
     --color: aqua;
     --strip-color: rgba(0, 0, 0, 0.616);
 }
+/*Fix browsers autofill*/ 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px rgb(24, 24, 24) inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #ffffff;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/0 0 0 50px rgb(24, 24, 24) inset;
+    -webkit-text-fill-color: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     color: white;
     background-color: black;
 }
@@ -80,7 +96,6 @@ button {
 label{
     color: var(--color);
     background-color: transparent;
-
 }
 
 div {
@@ -101,10 +116,12 @@ button{
     color: white;
     border:none; 
     border-radius:10px; 
-    padding:15px;
+    padding:12px;
     margin: 40px;
     min-height:30px; 
     min-width: 120px;
+    font-size: 1.25em;
+    font-weight:300;
   }
 
 button:hover{
@@ -115,21 +132,24 @@ button:hover{
 }
 .input-fields{
     margin-top: 40px;
-    display: flex;
     padding-left: 40px;
-    gap: 60px;
-    flex-flow: row wrap;
     width: 100%;
     height: 100%;
     box-shadow: 2px 1px 2.5px var(--color);
     background-image:linear-gradient(45deg,
-    rgb(5, 5, 5), #131212);;
-    align-items: center;
+    rgb(5, 5, 5), #131212);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.input-control{
-    margin-bottom: 20px;   
+.section{
+    display:flex;
+    gap: 30px;
+    padding: 10px;
 }
+
 input:focus{
     outline: 0;
     border-color: var(--color);
@@ -144,6 +164,22 @@ input:focus{
 .error-msg{
     color: rgb(245, 117, 117);
     font-size: 0.9em;
-    padding-top: 8px;
+    padding-top: 5px;
 
+}
+.footer-elements{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 35px;
+    margin-top: auto;
+    padding: 10px;
+}
+.footer{
+    color: var(--color);
+}
+.footer-git:hover{
+    transform: rotate(180deg) scale(1.1);
+    filter: brightness(300%);
 }
