@@ -1,5 +1,7 @@
 :root{
     --color: aqua;
+    --color-fail: rgb(245, 117, 117);
+    --color-success:rgb(119, 202, 119);
     --strip-color: rgba(0, 0, 0, 0.616);
 }
 /*Fix browsers autofill*/ 
@@ -148,24 +150,30 @@ button:hover{
     display:flex;
     gap: 30px;
     padding: 10px;
+    padding-top:10px;
 }
 
 input:focus{
-    outline: 0;
-    border-color: var(--color);
+    outline: none;
+
 }
 
 .success{
-    border-color: rgb(119, 202, 119);
+    border-color: var(--color-success);
 }
 .fail{
-    border-color: rgb(245, 117, 117);
+    border-color: var(--color-fail);
 }
 .error-msg{
-    color: rgb(245, 117, 117);
+    color: var(--color-fail);
     font-size: 0.9em;
     padding-top: 5px;
+    max-width: 300px;
+    display: flex;
 
+}
+.password-msg{
+    color: var(--color);
 }
 .footer-elements{
     display:flex;
@@ -182,4 +190,7 @@ input:focus{
 .footer-git:hover{
     transform: rotate(180deg) scale(1.1);
     filter: brightness(300%);
+}
+#pswd{
+    height: 20px;
 }

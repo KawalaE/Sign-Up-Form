@@ -5,7 +5,6 @@ let phone = document.getElementById('user_phone')
 let password = document.getElementById('password');
 let password2 = document.getElementById('password2');
 let form = document.getElementById('form');
-let message = document.getElementsByClassName('error');
 
 
 form.addEventListener('submit', (e) =>{
@@ -22,11 +21,38 @@ function isEmailValid(e){
 function isPhoneValid(e){
     return (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/).test(String(e));
 }
+function isPasswordValid(e){
+    return (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{7,14}$/).test(String(e));
+}
 function messageHandler(inputType, message){
     let inputControl = inputType.parentElement;
     let errorMessage = inputControl.querySelector('.error-msg');
     errorMessage.innerText = message;
 }
+
+password.addEventListener('focus', () =>{
+    messageHandler(password, 'Password should have between 7 to 14 characters. One of them must be a letter, one of them must be a number and one of them must be a special character.');
+    document.getElementById('pswd').classList.add('password-msg');
+})
+password.addEventListener('blur', () =>{
+    messageHandler(password, '');
+    document.getElementById('pswd').classList.remove('password-msg');
+})
+password.addEventListener('input', () =>{
+    password.classList.add('fail');
+    if(isPasswordValid(password.value)){
+        password.classList.add('success');
+        password.classList.remove('fail');
+    }
+})
+password2.addEventListener('input', () =>{
+    password2.classList.add('fail');
+    if(password.value === password2.value){
+        password2.classList.add('success');
+        password2.classList.remove('fail');
+        messageHandler(password2, '');
+    }
+})
 
 function inputCheck(){
     if(firstName.value === ''){
@@ -57,6 +83,7 @@ function inputCheck(){
     if (email.value === ''){
         email.classList.add('fail');
         messageHandler(email, "Email is required.");
+        
     }else if(!isEmailValid(email.value)){
         email.classList.add('fail');
         messageHandler(email, "Invalid email format.")
@@ -66,7 +93,6 @@ function inputCheck(){
         email.classList.add('success');
         messageHandler(email, ' ');
     }
-
     if (phone.value === ''){
         phone.classList.add('fail');
         messageHandler(phone, "Phone field is required.");
@@ -79,20 +105,27 @@ function inputCheck(){
         phone.classList.add('success');
         messageHandler(phone, ' ');
     }
-
     if (password.value === ''){
         password.classList.add('fail');
         messageHandler(password, "Password is required.");
-    }else{
+    }else if(!isPasswordValid(password.value)){
+        password.classList.add('fail');
+        messageHandler(password, "Invalid password format.");
+
+    }
+    else{
         password.classList.remove('fail');
         password.classList.add('success');
         messageHandler(password, ' ');
     }
-
     if (password2.value === ''){
         password2.classList.add('fail');
         messageHandler(password2, "Password confirmation is required.");
-    } else if(password.value !== password2.value){
+
+    }else if(!isPasswordValid(password.value)){
+        password2.classList.add('fail');
+        messageHandler(password2, "Invalid password format.");
+    }else if(password.value !== password2.value){
         password2.classList.add('fail');
         messageHandler(password2, "Passwords do not match.");
         password.classList.add('fail');
