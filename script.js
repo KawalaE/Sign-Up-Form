@@ -5,11 +5,12 @@ let phone = document.getElementById('user_phone')
 let password = document.getElementById('password');
 let password2 = document.getElementById('password2');
 let form = document.getElementById('form');
-
+let correctInputs = 0;
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
     inputCheck();
+    
 });
 
 function isNameValid(e){
@@ -66,6 +67,7 @@ function inputCheck(){
         firstName.classList.remove('fail');
         firstName.classList.add('success');
         messageHandler(firstName, ' ');
+        correctInputs +=1;
     }
 
     if(lastName.value === ''){
@@ -78,6 +80,7 @@ function inputCheck(){
         lastName.classList.remove('fail');
         lastName.classList.add('success');
         messageHandler(lastName, ' ');
+        correctInputs +=1;
     }
 
     if (email.value === ''){
@@ -92,6 +95,7 @@ function inputCheck(){
         email.classList.remove('fail');
         email.classList.add('success');
         messageHandler(email, ' ');
+        correctInputs +=1;
     }
     if (phone.value === ''){
         phone.classList.add('fail');
@@ -104,6 +108,7 @@ function inputCheck(){
         phone.classList.remove('fail');
         phone.classList.add('success');
         messageHandler(phone, ' ');
+        correctInputs +=1;
     }
     if (password.value === ''){
         password.classList.add('fail');
@@ -117,6 +122,7 @@ function inputCheck(){
         password.classList.remove('fail');
         password.classList.add('success');
         messageHandler(password, ' ');
+        correctInputs +=1;
     }
     if (password2.value === ''){
         password2.classList.add('fail');
@@ -135,6 +141,10 @@ function inputCheck(){
         password2.classList.remove('fail');
         password2.classList.add('success');
         messageHandler(password2, ' ');
-    } 
+        correctInputs +=1;
+    }
+    if(correctInputs == 6){
+        alert("Your application has been submitted!");
+    }
 }
 
