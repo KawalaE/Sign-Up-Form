@@ -10,7 +10,6 @@ let correctInputs = 0;
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
     inputCheck();
-    
 });
 
 function isNameValid(e){
@@ -32,7 +31,7 @@ function messageHandler(inputType, message){
 }
 
 password.addEventListener('focus', () =>{
-    messageHandler(password, 'Password should have between 7 to 14 characters. One of them must be a letter, one of them must be a number and one of them must be a special character.');
+    messageHandler(password, 'Passwords should be between 7 and 14 characters long. One of them has to be a letter, one has to be a number, and one has to be a special character.');
     document.getElementById('pswd').classList.add('password-msg');
 })
 password.addEventListener('blur', () =>{
@@ -145,6 +144,7 @@ function inputCheck(){
     }
     if(correctInputs == 6){
         alert("Your application has been submitted!");
+        setTimeout(location.reload.bind(location), 600);
     }
 }
 
