@@ -3,6 +3,8 @@
     --color-fail: rgb(245, 117, 117);
     --color-success:rgb(119, 202, 119);
     --strip-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    height: 100%;
 }
 /*Fix browsers autofill*/ 
 input:-webkit-autofill,
@@ -19,7 +21,6 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: /*your box-shadow*/0 0 0 50px rgb(24, 24, 24) inset;
     -webkit-text-fill-color: #ffffff;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ input:-webkit-autofill:focus {
     font-family: 'Inter Tight', sans-serif;
     color: white;
     background-color: black;
+
 }
 input,
 textarea,
@@ -51,14 +53,14 @@ button {
     width: 100%;
     height: 100%;
     display: flex;
-
 }
 .left-side{
     background-image: url(Pictures/safar-safarov-koOdUvfGr4c-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 45vw;
+    display: block;
+    width: 45%;
     height: 100vh;
 }
 .logo-picture{
@@ -81,7 +83,6 @@ button {
     display: flex;
     flex-direction: column;
 }
-
 .info-about{
     padding-left: 40px;
     margin-top: 100px;
@@ -94,25 +95,22 @@ button {
     font-weight: bold;
     font-size: 1.25em;
 }
-
 label{
     color: var(--color);
     background-color: transparent;
 }
-
 div {
     background-color: transparent;
 }
 input{
     appearance: none;
-    min-width: 300px;
+    width: auto;
     display: block;
     background-color: rgb(19, 19, 19);
     padding: 10px;
     border: 2px solid grey;
     border-radius: 0.25em;
 }
-
 button{
     background-color: rgb(66, 66, 66);
     color: white;
@@ -120,8 +118,8 @@ button{
     border-radius:10px; 
     padding:12px;
     margin: 40px;
-    min-height:30px; 
-    min-width: 120px;
+    min-height:auto; 
+    min-width: auto;
     font-size: 1.25em;
     font-weight:300;
   }
@@ -135,6 +133,7 @@ button:hover{
 .input-fields{
     margin-top: 40px;
     padding-left: 40px;
+    padding-right: 40px;
     width: 100%;
     height: 100%;
     box-shadow: 2px 1px 2.5px var(--color);
@@ -145,19 +144,15 @@ button:hover{
     flex-direction: column;
     justify-content: center;
 }
-
 .section{
     display:flex;
+    flex-wrap: wrap;
     gap: 30px;
-    padding: 10px;
     padding-top:10px;
 }
-
 input:focus{
     outline: none;
-
 }
-
 .success{
     border-color: var(--color-success);
 }
@@ -168,19 +163,18 @@ input:focus{
     color: var(--color-fail);
     font-size: 0.9em;
     padding-top: 5px;
-    max-width: 300px;
+    max-width: 250px;
     display: flex;
-
 }
 .password-msg{
     color: var(--color);
+    height: 20px;
 }
 .footer-elements{
     display:flex;
     align-items: center;
     justify-content: center;
     gap: 10px; 
-    margin-top: 35px;
     margin-top: auto;
     padding: 10px;
 }
@@ -189,8 +183,43 @@ input:focus{
 }
 .footer-git:hover{
     transform: rotate(180deg) scale(1.1);
-    filter: brightness(300%);
+    filter: brightness(200%);
 }
-#pswd{
-    height: 20px;
+@media only screen and (max-width: 1000px){
+    .page-content{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+        height: auto;
+    }
+    .info-about{
+        margin-top: 10px;
+        padding-right: 40px;
+    }
+    .section{
+        justify-content: center;
+        width: auto;
+    }
+    .input-fields {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 500px){
+    .section{
+        gap: 10px;
+    }
+    .password-msg{
+        height: 70px;
+    }
+    .info-about{
+        font-size: 2em;
+    }
+    
 }
