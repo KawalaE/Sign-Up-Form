@@ -19,6 +19,24 @@ Form validation was written entirely in Java Script. If the Submit button is pre
 
 <img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot.">
 
+If the password and password confirmation do not match, the user will be notified.
+
+<img src="Pictures/Readme-pics/form-2.png" alt="page screenshot.">
+
+If the password field becomes active, there will be message displayed about password requirements. While enetering password the ouline of an input will higlight red if the requirement are not yet met or geen if password meets the requirements. 
+
+<img src="Pictures/Readme-pics/form-3.png" alt="page screenshot.">
+
+The form was created with mobile users in mind. 
+
+<img src="Pictures/Readme-pics/phone-page-screen-1.png" alt="phone screenshot.">
+
+<img src="Pictures/Readme-pics/phone-page-screen-2.png" alt="phone screenshot.">
+
+<img src="Pictures/Readme-pics/phone-page-screen-3.png" alt="phone screenshot.">
+
+<img src="Pictures/Readme-pics/phone-page-screen-4.png" alt="phone screenshot.">
+
 <h2>Acknowledgements:</h2>
 <ul>
     <li>Photo by Safar Safarov on Unsplash</li>
