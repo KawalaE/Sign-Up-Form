@@ -12,7 +12,12 @@
 <h2>Project description</h2>
 The project can be viewed at the following URL:
 https://kawalae.github.io/Sign-Up-Form/
+
 <img src="Pictures/Readme-pics/full-page-screen.png" alt="Full page screenshot.">
+
+Form validation was written entirely in Java Script. If the Submit button is pressed but no needed data is entered, the input fields will be highlighted and an appropriate message will show beneath it.
+
+<img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot.">
 
 <h2>Acknowledgements:</h2>
 <ul>
