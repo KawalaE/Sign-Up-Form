@@ -1,6 +1,6 @@
 # Sign-Up-Form
 <h1>Newsletter sign up form project<h1>
-
+https://kawalae.github.io/Sign-Up-Form/
 <p align ="justify">The goal of this project is to practice building <strong>form validation in Java Script</strong> and to become acquainted with creating <strong>responsive design.</strong></p>
 
 <h2>Technologies used: <h2>
