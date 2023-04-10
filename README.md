@@ -17,7 +17,9 @@ https://kawalae.github.io/Sign-Up-Form/
 
 Form validation was written entirely in Java Script. If the Submit button is pressed but no needed data is entered, the input fields will be highlighted and an appropriate message will show beneath it.
 
-<p style="text-align:center;"><img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot."></p>
+<div align='center'>
+   <img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot.">
+</div>
 
 If the password and password confirmation do not match, the user will be notified.
 
