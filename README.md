@@ -17,7 +17,7 @@ https://kawalae.github.io/Sign-Up-Form/
 
 Form validation was written entirely in Java Script. If the Submit button is pressed but no needed data is entered, the input fields will be highlighted and an appropriate message will show beneath it.
 
-<img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot.">
+<p style="text-align:center;"><img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot."></p>
 
 If the password and password confirmation do not match, the user will be notified.
 
@@ -31,15 +31,10 @@ The form was created with mobile users in mind.
 
 <img src="Pictures/Readme-pics/phone-page-screen-1.png" alt="phone screenshot.">
 
-<img src="Pictures/Readme-pics/phone-page-screen-2.png" alt="phone screenshot.">
-
-<img src="Pictures/Readme-pics/phone-page-screen-3.png" alt="phone screenshot.">
-
 <img src="Pictures/Readme-pics/phone-page-screen-4.png" alt="phone screenshot.">
 
 <h2>Acknowledgements:</h2>
 <ul>
-    <li>Photo by Safar Safarov on Unsplash</li>
     <li><a target="_blank" href="https://icons8.com/icon/21278/css3">CSS3</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
     <li><a target="_blank" href="https://icons8.com/icon/PXTY4q2Sq2lG/javascript">JavaScript</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
     <li><a target="_blank" href="https://icons8.com/icon/v8RpPQUwv0N8/html-5">Html 5</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></li>
