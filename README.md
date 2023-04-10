@@ -34,7 +34,7 @@ If the password field becomes active, there will be message displayed about pass
 </div>
 
 The form was created with mobile users in mind. 
-<div style="display: flex;">
+<div style="display: flex, flex-direction: row">
     <div align='center'>
         <img src="Pictures/Readme-pics/phone-page-screen-1.png" alt="phone screenshot.">
     </div>
