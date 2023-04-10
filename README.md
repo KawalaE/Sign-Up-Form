@@ -40,7 +40,7 @@ The form was created with mobile users in mind.
 </div>
 
 <div align='center'>
-    <img src="Pictures/Readme-pics/phone-page-screen-4.png" alt="phone screenshot.">
+    <img src="Pictures/Readme-pics/phone-page-screen-2.png" alt="phone screenshot.">
 </div>
 
 <h2>Acknowledgements:</h2>
