@@ -12,7 +12,9 @@
 The project can be viewed at the following URL:
 https://kawalae.github.io/Sign-Up-Form/
 
+
 <img src="Pictures/Readme-pics/full-page-screen.png" alt="Full page screenshot.">
+
 
 Form validation was written entirely in Java Script. If the Submit button is pressed but no needed data is entered, the input fields will be highlighted and an appropriate message will show beneath it.
 
@@ -20,17 +22,20 @@ Form validation was written entirely in Java Script. If the Submit button is pre
    <img src="Pictures/Readme-pics/form-1.png" alt="Full page screenshot.">
 </div>
 
+
 If the password and password confirmation do not match, the user will be notified.
 
 <div align='center'>
     <img src="Pictures/Readme-pics/form-2.png" alt="page screenshot.">
 </div>
 
+
 If the password field becomes active, there will be message displayed about password requirements. While enetering password the ouline of an input will higlight red if the requirement are not yet met or geen if password meets the requirements. 
 
 <div align='center'>
     <img src="Pictures/Readme-pics/form-3.png" alt="page screenshot.">
 </div>
+
 
 The form was created with mobile users in mind. 
 
