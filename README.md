@@ -12,7 +12,7 @@
 <h2>Project description</h2>
 The project can be viewed at the following URL:
 https://kawalae.github.io/Sign-Up-Form/
-<img src="full-page-screen.png" alt="Full page screenshot.">
+<img src="Pictures/Readme-pics/full-page-screen.png" alt="Full page screenshot.">
 
 <h2>Acknowledgements:</h2>
 <ul>
