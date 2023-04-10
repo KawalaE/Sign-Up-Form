@@ -38,7 +38,6 @@ The form was created with mobile users in mind.
     <div align='center'>
         <img src="Pictures/Readme-pics/phone-page-screen-1.png" alt="phone screenshot.">
     </div>
-
     <div align='center'>
         <img src="Pictures/Readme-pics/phone-page-screen-2.png" alt="phone screenshot.">
     </div>
