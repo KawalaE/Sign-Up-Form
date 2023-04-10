@@ -1,7 +1,7 @@
 # Sign-Up-Form
 
 <p align ="justify">The goal of this project is to practice building <strong>form validation in Java Script</strong> and to become acquainted with creating <strong>responsive design.</strong></p>
-
+<a ref="https://kawalae.github.io/Sign-Up-Form/">Click here to view!</a>
 
 <h2>Technologies used: <h2>
 <img src="Pictures/soft-dev-icons/icons8-javascript.svg" alt="Java Script icon">
@@ -9,9 +9,6 @@
 <img src="Pictures/soft-dev-icons/icons8-css3.svg" alt="CSS icon">
 
 <h2>Project description</h2>
-The project can be viewed at the following URL:
-https://kawalae.github.io/Sign-Up-Form/
-
 
 <img src="Pictures/Readme-pics/full-page-screen.png" alt="Full page screenshot.">
 
