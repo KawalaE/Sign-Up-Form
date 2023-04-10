@@ -31,7 +31,7 @@ function messageHandler(inputType, message){
 }
 
 password.addEventListener('focus', () =>{
-    messageHandler(password, 'Passwords should be between 7 and 14 characters long. One of them has to be a letter, one has to be a number, and one has to be a special character.');
+    messageHandler(password, 'Passwords should be between 7 and 14 characters long. One of them has to be a capital letter, one has to be a number, and one has to be a special character.');
     document.getElementById('pswd').classList.add('password-msg');
 })
 password.addEventListener('blur', () =>{
